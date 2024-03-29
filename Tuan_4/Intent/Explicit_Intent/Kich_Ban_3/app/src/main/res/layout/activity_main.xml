@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập số N:"
+            android:textSize="25sp"
+            android:textColor="#ff0000" />
+
+        <EditText
+            android:id="@+id/editTextSoN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Ví dụ N=50"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btnGui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TÍNH ƯỚC CỦA N"
+            android:backgroundTint="#2196F3"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textViewKQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Các ước số..."
+            android:textSize="20sp"
+            android:textColor="#ff0000"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

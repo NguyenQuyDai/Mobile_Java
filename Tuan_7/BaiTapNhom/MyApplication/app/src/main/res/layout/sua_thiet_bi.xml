@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sửa Thiết Bị"
+            android:textStyle="bold"
+            android:textSize="10pt"
+            android:textColor="#F44336"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID:"
+            android:textStyle="bold"
+            android:textColor="#E91E63"
+            android:textSize="10pt"/>
+
+        <EditText
+            android:id="@+id/edtMaTB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="7pt"
+            android:hint="Nhập mã thiết bị"/>
+
+        <EditText
+            android:id="@+id/edtTenTB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="7pt"
+            android:hint="Nhập tên thiết bị"/>
+
+        <EditText
+            android:id="@+id/edtGiaTB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="7pt"
+            android:hint="Nhập giá thiết bị" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:backgroundTint="#fff"
+                android:id="@+id/btnChupAnh"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:src="@drawable/camera"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:paddingLeft="20dp"/>
+            <ImageButton
+                android:id="@+id/btnChonAnh"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:backgroundTint="#fff"
+                android:src="@drawable/upload" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgAnhThem"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/dogiadung" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnThem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thêm"
+                android:backgroundTint="#4CAF50"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:paddingLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btnHuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hủy"
+                android:backgroundTint="#F44336"
+                android:textStyle="bold"
+                android:textSize="7pt" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

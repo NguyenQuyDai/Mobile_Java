@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtSuaCVTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sửa công việc"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:textSize="12pt"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtIdCV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID:"
+            android:textColor="#f55"
+            android:textSize="12pt"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/edtSuaTenCV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Nhập tên công việc"
+            android:layout_marginTop="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btnSuaCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2CF516"
+                android:text="Lưu" />
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnHuySuaCV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hủy"
+                android:backgroundTint="#F44336"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

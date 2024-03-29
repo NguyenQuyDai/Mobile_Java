@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm Công Việc"
+            android:textColor="#f55"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edtTenCV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/txtTitle"
+            android:inputType="text"
+            android:text=""
+            android:hint="Thêm công việc"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:backgroundTint="#2CF516"
+            android:layout_below="@+id/edtTenCV"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/btnHuyThemCV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:backgroundTint="#F44336"
+            android:layout_below="@+id/edtTenCV"
+            android:layout_toRightOf="@+id/btnThem"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
